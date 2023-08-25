@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Cascadia Mono2";
+    src: url("/style/Cascadia.woff") format("woff2"), url("/style/Cascadia.woff") format("woff");
+    /* Add other font formats here if needed */
+}
+
+body {
+    display: flex;
+    background-attachment: fixed;
+    background-size: cover;
+
+    &:hover {
+        background-image: url('/assets/Rectangle\ 18.png');
+    }
+}
+
+.bg_infor {
+    display: flex;
+    height: 55rem;
+    width: 105rem;
+    margin-top: 3rem;
+    margin-left: 10rem;
+
+    &:hover {
+        .text_infor, .text_job {
+            color: #FFF;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .text_infor strong {
+            color: var(--primary-3, #D9D9D9);
+            font-size: 25px;
+            font-style: normal;
+            transition: color 0.2s ease-in-out;
+        }
+    }
+}
+
+img {
+    height: 30rem;
+}
+
+.text {
+    color: #18106c;
+    font-family: "Cascadia Mono2";
+}
+
+.text_infor {
+    margin-top: -2.5rem;
+    margin-left: -27rem;
+    width: 105rem;
+    font-size: 2rem;
+}
+
+.text_job {
+    height: 30rem;
+    width: 78rem;
+    font-size: 3rem;
+}
+
+.text_infor p strong {
+    color: #1ca4cd;
+    font-size: 25px;
+    font-style: normal;
+}
+
+.text_a {
+    margin-left: 65rem;
+}
+
+.text_b {
+    margin-left: 10rem;
+}
+
+.text_c {
+    margin-left: 40rem;
+}
+
+.text_d {
+    margin-left: 15rem;
+}
